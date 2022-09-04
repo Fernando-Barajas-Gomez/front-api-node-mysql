@@ -20,7 +20,7 @@
         }
          
         //generamos el nuevo enlace 
-        const nuevaURL = document.location.protocol + '://' + window.location.hostname + window.location.pathname + "?" +  parametros.toString();
+        const nuevaURL = document.location.protocol + '//' + window.location.hostname + window.location.pathname + "?" +  parametros.toString();
 
         //reedirigimos la pagina a la misma vista pero con los nuevos parametros
         window.location.href = nuevaURL;
