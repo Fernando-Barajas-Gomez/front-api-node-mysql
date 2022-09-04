@@ -1,0 +1,165 @@
+/*Contenedor general de la aplicacion*/
+main{
+    width: 100%;
+    height: 92%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;
+
+    position: absolute;
+    top: 8%;
+
+    /*Ocultar el scroll*/
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-y: scroll;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+/*titulo para colocar el mensaje con el error*/
+main h1{
+    width: 100%;
+    padding: 2%;
+
+    text-align: center;
+
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 2vw);
+    font-weight: lighter;
+
+}
+
+/*contendor general de cada producto*/
+main article{
+    width: 25%;
+    height: 45vh;
+    margin-top: 2%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+} 
+
+/*tarjeta del producto*/
+main article div{
+    width: 80%;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+
+    text-align: center;
+
+    position:relative;
+}
+
+/*imagen del producto*/
+main article div img{
+    width: 90%;
+    height: 70%;
+}
+
+/*nombre del producto*/
+main article div label{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 0.2vw);
+    font-weight: lighter;
+
+    color: rgb(105, 105, 105);
+}
+/*clase para subrayar el precio anterior*/
+.subrayar{
+    text-decoration: line-through;
+}
+/*clase para el precio con descuento*/
+.descuento{
+    color: red;
+    margin-left: 0.2%;
+}
+
+/*clase para ocultar elementos*/
+.oculto{
+    display: none;
+}
+
+/*contenedor del precio e icono de agregar al carrito */
+main article div div{
+    width: 100%;
+    height: 15%;
+    
+    position: absolute;
+    bottom: 0;
+
+    border-top: 1px solid rgba(214, 214, 214, 0.952);
+
+    display: flex;
+}
+
+/*contenedor del precio del producto*/
+main article div div .cntPrecio{
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+/*precio del producto*/
+main article div div .cntPrecio label{
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 0.6vw);
+    font-weight: lighter;
+
+    margin-left: 5%;
+}
+
+/*contenedor del contendor del icono de agregar al carrito*/
+main article div div .cntIconoCarrito{
+    width: 25%;
+    height: 100%;
+
+    margin-left: 70%;
+
+    position: relative;
+}
+
+
+/*contenedor del icono de agregar al carrito */
+main article div div .cntIconoCarrito div{
+    width: 80%;
+    height: 80%;
+    padding: 5%;
+
+    cursor: pointer;
+
+    background-color: rgb(84, 84, 84);
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+    border-radius: 50%;
+}
+/* icono de agregar al carrito */
+main article div div div object{
+    width: 100%;
+    
+    border: 0;
+
+    pointer-events: none;
+}
+
+
+
+
+
+ 
