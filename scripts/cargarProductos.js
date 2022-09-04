@@ -37,9 +37,8 @@
 
   /**Funcion para colocar el nombre del producto en el navegador al recargar la pagina */
   function colocarProductoBuscador(busqueda){
-    const nombreProducto = document.getElementById("nombreProducto");
-    //colocamos el nombre (busqueda) en el buscador
-    nombreProducto.textContent = busqueda;
+     //colocamos el nombre (busqueda) en el buscador
+    document.getElementById("nombreProducto").textContent = busqueda;;
   }
 
   /**Función para obtener cierto producto de cierta categoria*/
