@@ -24,14 +24,24 @@
     }
     //si solo contiene el parametro product
     else if(!parametros.has('category') && parametros.has('product')){
-     obtenerCiertoProducto(parametros.get("product"));
+      obtenerCiertoProducto(parametros.get("product"));
+      colocarProductoBuscador(parametros.get("product"));
     }
     //si contiene ambos parametros
     else if(parametros.has('category') && parametros.has('product')){
       obtenerCiertoProductoCategoria(parametros.get('product'), parametros.get('category'));
       setTimeout(() => { selectedOpcion(parametros.get('category')); }, 500);
+      colocarProductoBuscador(parametros.get("product"));
     }
   }
+
+  /**Funcion para colocar el nombre del producto en el navegador al recargar la pagina */
+  function colocarProductoBuscador(busqueda){
+    const nombreProducto = document.getElementById("nombreProducto");
+    //colocamos el nombre (busqueda) en el buscador
+    nombreProducto.textContent = busqueda;
+  }
+
   /**Función para obtener cierto producto de cierta categoria*/
   function obtenerCiertoProductoCategoria(producto, categoria){
     //petición a la API para obtener los productos de tal categoria
