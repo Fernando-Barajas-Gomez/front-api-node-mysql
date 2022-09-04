@@ -1,0 +1,29 @@
+@import url('header.css');
+@import url('productos.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(214, 214, 214, 0.952);
+}
+
+
+/* MOVILES */
+@media screen and
+    (max-width: 720px){
+
+}
+
+/* TABLETS */
+@media screen and
+    (min-width: 720px) and
+    (max-width: 1024px){
+        
+}
