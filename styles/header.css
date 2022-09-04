@@ -1,0 +1,133 @@
+/*contenedor principal del header*/
+header{
+    width: 100%;
+    height: 8%;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    position: fixed;
+    top: 0;
+
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 100;
+}
+
+/*titulo del encabezado*/
+header h1{
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 1.5vw);
+    font-weight: lighter;
+
+    color: rgb(105, 105, 105);
+}
+
+/*Buscador*/
+header .formBuscador{
+    width: 30%;
+
+    margin-left: 10%;
+
+    border-radius: 10px;
+    border: 1px solid rgb(105, 105, 105);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*campo de texto del buscador*/
+header .formBuscador input[type="text"]{
+    width: 90%;
+    padding: 1%;
+    
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 0.6vw);
+    font-weight: lighter;
+}
+
+/*boton de buscar del buscador*/
+header .formBuscador button[type="submit"]{
+    width: 8%;
+    height: 100%;
+    padding: 1%;
+
+    background: transparent;
+
+    border: 0;
+}
+
+/*contenedor del icono de la lupa*/
+header .formBuscador button[type="submit"] div{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    cursor: pointer;
+}
+
+/*icono de la lupa del boton del buscador*/
+header .formBuscador button[type="submit"] div object{
+    width: 100%;
+
+    border: 0;
+
+    pointer-events: none;
+}
+
+/*contenedor para seleccionar la Categoría*/
+header .formCategoria{
+    width: 25%;
+    padding: 0.2%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Etiqueta de la categoria*/
+header .formCategoria label{
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 0.6vw);
+    font-weight: lighter;
+
+    color: rgb(105, 105, 105);
+}
+
+/*Select de la categoria*/
+header .formCategoria select{
+    width: 70%;
+    margin-left: 3%;
+    padding: 1%;
+    
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 10px;
+    outline: none;
+
+    font-family: sans-serif;
+    font-size: calc(0.5rem + 0.6vw);
+    font-weight: lighter;
+
+    color: rgb(105, 105, 105);
+}
+
+header .formCategoria select:hover{
+    cursor: pointer;
+    outline: 1px solid black;
+}
+
+/*cada categoria (opciones del select)*/
+header .formCategoria select option:hover{
+    cursor: pointer;
+    background-color: rgb(84, 84, 84);
+    color: white;
+}
